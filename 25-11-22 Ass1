@@ -1,0 +1,6 @@
+list=[5,10,15,20,25,30,35,40]
+num=int(input('Enter any number:'))
+if num in list:
+    print('YES')
+else:
+    print('NO')
