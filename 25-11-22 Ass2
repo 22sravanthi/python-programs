@@ -1,0 +1,6 @@
+list=[54,32,98,0,7,6,45,-3,-5]
+min=list[0]
+for i in list:
+    if i<min:
+        min=i
+print('Minimum value:',min)
