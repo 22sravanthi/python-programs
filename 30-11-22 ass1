@@ -1,0 +1,30 @@
+surf=220
+teapowder=160
+oil=120
+sugar=40
+flour=30
+cphno=input('enter customer phone number:')
+cname=input('enter customer name:')
+caddr=input('enter customer address:')
+sq=int(input('How many kgs surf you want:'))
+tq=int(input('How many kgs tea powder you want:'))
+oq=int(input('How many oilpackets you want:'))
+sgq=int(input('How many kgs sugar you want:'))
+fq=int(input('How many kgs flour you want:'))
+bill=(sq*surf)+(tq*teapowder)+(oq*oil)+(sgq*sugar)+(fq*flour)
+if bill>3000:
+    tax=bill*5/100
+elif bill>2000:
+    tax=bill*7/100
+elif bill>1000:
+    tax=bill*10/100
+elif bill>500:
+    tax=bill*15/100
+else:
+    tax=100
+bill=bill+tax
+print('customer phone number:',cphno)
+print('customer name:',cname)
+print('customer address:',caddr)
+print('Tax=',tax)
+print('Bill amount=',bill)
