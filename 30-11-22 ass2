@@ -1,0 +1,46 @@
+surf=220
+teapowder=160
+oil=120
+sugar=40
+flour=30
+cphno=input('enter customer phone number:')
+cname=input('enter customer name:')
+caddr=input('enter customer address:')
+sq=int(input('How many kgs surf you want:'))
+tq=int(input('How many kgs tea powder you want:'))
+oq=int(input('How many oilpackets you want:'))
+sgq=int(input('How many kgs sugar you want:'))
+fq=int(input('How many kgs flour you want:'))
+coupon=input('Enter coupon code in capitals:') 
+bill=(sq*surf)+(tq*teapowder)+(oq*oil)+(sgq*sugar)+(fq*flour)
+if bill>3000:
+    tax=bill*5/100
+elif bill>2000:
+    tax=bill*7/100
+elif bill>1000:
+    tax=bill*10/100
+elif bill>500:
+    tax=bill*15/100
+else:
+    tax=100
+if coupon=='DIWALI' and bill>=5000:
+    dis=bill*10/100
+elif coupon=='DIWALI' and bill>=3000:
+    dis=bill*6/100
+elif coupon=='DIWALI' and bill>=1000:
+    dis=bill*4/100
+elif coupon=='CHRISMAS' and bill>=3000:
+    dis=bill*20/100
+elif coupon=='CHRISMAS' and bill>=2000:
+    dis=bill*10/100
+elif coupon=='CHRISMAS' and bill>=1000:
+    dis=bill*5/100
+else:
+    dis=0
+bill=bill+tax-dis
+print('customer phone number:',cphno)
+print('customer name:',cname)
+print('customer address:',caddr)
+print('Tax=',tax)
+print('Discount=',dis)
+print('Bill amount=',bill)
