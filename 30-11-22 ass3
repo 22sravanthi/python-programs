@@ -1,0 +1,23 @@
+sno=input('Enter service number:')
+cname=input('Enter customer name:')
+cphno=input('Enter customer phone number:' )
+caddr=input('Enter customer address:' )
+units=int(input('Enter units:'))
+if units>=0 and units<=30:
+    bill=(units*1.95)+10+25
+elif units>=75 and units<=125:
+    bill=(units*3)+10+30
+elif units>=126 and units<=225:
+    bill=(units*4.50)+10+45
+elif units>=226 and units<=400:
+    bill=(units*8.75)+10+55
+elif units>400:
+    bill=(units*9.75)+10+55
+else:
+    bill=(units*10.50)+10+50
+print('service number:',sno)
+print('customer name:',cname)
+print('customer phone number:',cphno)
+print('customer address:',caddr)
+print('units:',units)
+print('bill amount:',bill)
