@@ -1,0 +1,17 @@
+n=int(input())
+m=[]
+sum=0
+sum1=0
+for i in range(0,n):
+    l=[]
+    for j in range(0,n):
+        x=int(input())
+        l.append(x)
+    m.append(l)
+for i in range(n):
+    for j in range(n):
+        if i==j:
+            sum=sum+m[i][j]
+        elif i+j==n-1:
+            sum1=sum1+m[i][j]
+print(sum+sum1)
