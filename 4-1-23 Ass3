@@ -1,0 +1,23 @@
+n=int(input())
+m=[]
+c=0
+for i in range(0,n):
+    l=[]
+    for j in range(0,n):
+        x=int(input())
+        l.append(x)
+    m.append(l)
+print('matrix:',m)
+for i in range(n):
+    sum=0
+    z=[]
+    for j in range(n):
+        sum=sum+m[i][j]
+        z.append(m[i][j])
+    if sum==2:
+        print('row sum values:',z)
+        c=c+1
+if c==3:
+    print(' Coder target matrix')
+else:
+    print('Not a coder target matrix')
