@@ -1,0 +1,3 @@
+l=list(map(int,input().split()))
+m=[i for i in l if i%2==1]
+print(m)
