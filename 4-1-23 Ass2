@@ -1,0 +1,18 @@
+n=int(input())
+m=[]
+k=[]
+for i in range(0,n):
+    l=[]
+    for j in range(0,n):
+        x=int(input())
+        l.append(x)
+    m.append(l)
+print(m)
+for i in range(n):
+    for j in range(n):
+        if i==j:
+            k.append(m[i][j])
+        if i+j==n-1:
+            k.append(m[i][j])
+print(k)
+print('max=',max(k))
