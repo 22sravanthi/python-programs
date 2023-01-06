@@ -1,0 +1,9 @@
+n=input('Enter Email id:')
+if n.endswith('@gmail.com'):
+    print('You are using google account')
+elif n.endswith('@yahoo.com'):
+    print('You are using yahoo account')
+elif n.endswith ('@adc.aditya.ac.in'):
+    print('You are using aditya educational institute account')
+else:
+    print('You are using other account')
