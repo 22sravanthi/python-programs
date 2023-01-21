@@ -1,0 +1,9 @@
+s=input()
+c='aeiou'
+x='AEIOU'
+for i in s:
+    if i.islower() and i in c:
+        s=s.replace(i,'')
+    elif i.isupper() and i in x:
+        s=s.replace(i,'')
+print(s)    
