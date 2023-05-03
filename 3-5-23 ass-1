@@ -1,0 +1,11 @@
+d={}
+n=int(input())
+for i in range(1,n+1):
+    name,result=input().split()
+    d[name]=result
+for i in range(1,n+1):
+    name=input()
+    if name in d:
+        print(name,d[name],'the exam')
+    else:
+        print('Not found')
